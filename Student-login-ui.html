@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UG Admission Form</title>
+
+<style>
+body{
+    margin:0;
+    padding:20px;
+    font-family:"Times New Roman", serif;
+    background-color:#D5F3D8;
+}
+
+header{
+    background:#ffffff;
+    padding:15px;
+    text-align:center;
+    border-radius:6px;
+    margin-bottom:15px;
+}
+
+nav{
+    background:#2f6f4e;
+    padding:10px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+main{
+    background:#ffffff;
+    padding:25px;
+    border-radius:8px;
+}
+
+fieldset{
+    border:1px solid #ccc;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+legend{
+    font-weight:bold;
+    padding:0 10px;
+}
+
+label{
+    display:inline-block;
+    width:180px;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+input, select{
+    padding:6px;
+    width:250px;
+    margin-bottom:10px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width:auto;
+    margin-left:10px;
+}
+
+.actions{
+    text-align:center;
+    margin-top:20px;
+}
+
+.actions input{
+    padding:10px 25px;
+    font-size:16px;
+    margin:0 10px;
+    cursor:pointer;
+}
+
+footer{
+    background:#F2C7C7;
+    text-align:center;
+    padding:12px;
+    margin-top:20px;
+    border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Guru Ghasidas University</h2>
+    <h3>UG Admission Form</h3>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+    <a href="#">About Us</a>
+</nav>
+
+<main>
+<form>
+
+<fieldset>
+<legend>Personal Details</legend>
+
+<label for="name">Name</label>
+<input type="text" id="name" placeholder="As per 10th Marksheet">
+
+<label for="fname">Father's Name</label>
+<input type="text" id="fname">
+
+<label for="mname">Mother's Name</label>
+<input type="text" id="mname">
+
+<label for="age">Age</label>
+<input type="number" id="age" min="17">
+
+<label>Gender</label>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+</fieldset>
+
+<fieldset>
+<legend>Contact Details</legend>
+
+<label for="phone1">Phone No 1</label>
+<input type="number" id="phone1">
+
+<label for="phone2">Phone No 2</label>
+<input type="number" id="phone2">
+
+<label for="email">Email ID</label>
+<input type="email" id="email" placeholder="abc@xyz.com">
+</fieldset>
+
+<fieldset>
+<legend>Address Details</legend>
+
+<label>Country</label>
+<input type="text">
+
+<label>State</label>
+<input type="text">
+
+<label>District</label>
+<input type="text">
+
+<label>City</label>
+<input type="text">
+
+<label>Pincode</label>
+<input type="number">
+</fieldset>
+
+<fieldset>
+<legend>Course Details</legend>
+
+<label>Choose Course</label>
+<select>
+<option value="">-- Select --</option>
+<option>BCA</option>
+<option>BSc</option>
+<option>MCA</option>
+<option>MSc</option>
+</select>
+
+<label>Medium</label>
+<input type="radio" name="medium"> Hindi
+<input type="radio" name="medium"> English
+</fieldset>
+
+<fieldset>
+<legend>Qualification Details</legend>
+
+<h4>Class X</h4>
+<label>Roll No</label>
+<input type="number">
+
+<label>Total Marks</label>
+<input type="number">
+
+<label>Marks Obtained</label>
+<input type="number">
+
+<label>Marksheet</label>
+<input type="file">
+
+<h4>Class XII</h4>
+<label>Roll No</label>
+<input type="number">
+
+<label>Total Marks</label>
+<input type="number">
+
+<label>Marks Obtained</label>
+<input type="number">
+
+<label>Marksheet</label>
+<input type="file">
+</fieldset>
+
+<fieldset>
+<legend>Account Security</legend>
+
+<label>Create Password</label>
+<input type="password">
+
+<label>Confirm Password</label>
+<input type="password">
+</fieldset>
+
+<fieldset>
+<legend>Verification</legend>
+
+<input type="checkbox"> Personal Details  
+<input type="checkbox"> Contact Details  
+<input type="checkbox"> Documents Uploaded  
+</fieldset>
+
+<div class="actions">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</div>
+
+</form>
+</main>
+
+<footer>
+    &copy; 2026 UG Admission Registration
+</footer>
+
+</body>
+</html>
